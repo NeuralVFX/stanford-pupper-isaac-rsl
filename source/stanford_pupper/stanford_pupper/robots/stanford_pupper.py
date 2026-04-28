@@ -30,28 +30,28 @@ PUPPER_CFG = ArticulationCfg(
             max_depenetration_velocity=1.0,
         ),
         articulation_props=sim_utils.ArticulationRootPropertiesCfg(
-            enabled_self_collisions=False, solver_position_iteration_count=4, solver_velocity_iteration_count=0
+            enabled_self_collisions=False, solver_position_iteration_count=4, solver_velocity_iteration_count=1
         ),
     ),
     init_state=ArticulationCfg.InitialStateCfg(
-        pos=(0.0, 0.0, .25),# Hoping this is same units i measured in ISAAC
+        pos=(0.0, 0.0, .27),
         joint_pos={
-            "LF_HIP_JOINT": 10*R_MULT,
-            "LF_THIGH_JOINT": 20*R_MULT,
-            "LF_THIGH_FOOT_JOINT": -50*R_MULT,
-            "LH_HIP_JOINT": 10*R_MULT,
-            "LH_THIGH_JOINT": 20*R_MULT,
-            "LH_THIGH_FOOT_JOINT": -50*R_MULT,
-            "RF_HIP_JOINT": -10*R_MULT,
-            "RF_THIGH_JOINT": 20*R_MULT,
-            "RF_THIGH_FOOT_JOINT": -50*R_MULT,
-            "RH_HIP_JOINT": -10*R_MULT,
-            "RH_THIGH_JOINT": 20*R_MULT,
-            "RH_THIGH_FOOT_JOINT": -50*R_MULT,
+            "LF_HIP_JOINT": 0.0,
+            "LF_THIGH_JOINT": 0.0,
+            "LF_THIGH_FOOT_JOINT": 0.0,
+            "LH_HIP_JOINT": 0.0,
+            "LH_THIGH_JOINT": 0.0,
+            "LH_THIGH_FOOT_JOINT": 0.0,
+            "RF_HIP_JOINT": 0.0,
+            "RF_THIGH_JOINT": 0.0,
+            "RF_THIGH_FOOT_JOINT": 0.0,
+            "RH_HIP_JOINT": 0.0,
+            "RH_THIGH_JOINT": 0.0,
+            "RH_THIGH_FOOT_JOINT": 0.0,
         },
         joint_vel={".*": 0.0},
     ),
-    soft_joint_pos_limit_factor=0.9,
+    soft_joint_pos_limit_factor=0.8,
     actuators={
         "base_legs": DCMotorCfg(
             joint_names_expr=[".*_HIP_JOINT", ".*_THIGH_JOINT", ".*_THIGH_FOOT_JOINT"],
