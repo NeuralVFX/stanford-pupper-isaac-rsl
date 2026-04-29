@@ -18,7 +18,7 @@ R_MULT = 0.0174533
 
 PUPPER_CFG = ArticulationCfg(
     spawn=sim_utils.UsdFileCfg(
-        usd_path=f"/stanford-pupper-isaac-rsl/stanford_pupper/assets/stanford_pup.usd",
+        usd_path=f"/stanford-pupper/stanford-pupper-isaac-rsl/assets/stanford_pup.usd",
         activate_contact_sensors=True,
         rigid_props=sim_utils.RigidBodyPropertiesCfg(
             disable_gravity=False,
