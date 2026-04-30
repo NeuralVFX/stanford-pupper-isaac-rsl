@@ -1,4 +1,3 @@
-
 from isaaclab.utils import configclass
 
 from isaaclab_tasks.manager_based.locomotion.velocity.velocity_env_cfg import LocomotionVelocityRoughEnvCfg
@@ -48,7 +47,7 @@ class StanfordPupperEnvCfg(LocomotionVelocityRoughEnvCfg):
         self.events.add_base_mass.params["mass_distribution_params"] = (.8, 1.2)
         self.events.add_base_mass.params["asset_cfg"].body_names = "base_link"
         self.events.base_external_force_torque.params["asset_cfg"].body_names = "base_link"
-        self.events.reset_robot_joints.params["position_range"] = (.9,1.1)
+        self.events.reset_robot_joints.params["position_range"] = (.5,1.5)
         self.events.reset_base.params = {
             "pose_range": {"x": (-0.5, 0.5), "y": (-0.5, 0.5), "yaw": (-3.14, 3.14)},
             "velocity_range": {
@@ -64,7 +63,7 @@ class StanfordPupperEnvCfg(LocomotionVelocityRoughEnvCfg):
 
         # rewards
         self.rewards.feet_air_time.params["sensor_cfg"].body_names = ".*_TOE"
-        self.rewards.feet_air_time.weight = .01 #0.01
+        self.rewards.feet_air_time.weight = .01 #0.01 # .02 works  #.03 alwas has one limp up
         self.rewards.undesired_contacts = None
         self.rewards.dof_torques_l2.weight = -0.0002
         self.rewards.track_lin_vel_xy_exp.weight = 1.5
@@ -84,4 +83,3 @@ class StanfordPupperEnvCfg_PLAY(StanfordPupperEnvCfg):
         self.scene.env_spacing = 2.5
         # disable randomization for play
         self.observations.policy.enable_corruption = False
-
