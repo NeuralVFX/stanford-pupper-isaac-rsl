@@ -3,6 +3,12 @@
 
 This is an RSL training script setup for [Stanford Pupper](https://github.com/chandyalex/stanford_pupper_description)
 
+## Usage
+### Training:
+`../../IsaacLab/isaaclab.sh -p scripts/rsl_rl/train.py --task Template-Stanford-Pupper-v0 --num_envs 4096 --headless --video --video_length 200 --video_interval 200`
+### Testing:
+`../../IsaacLab/isaaclab.sh -p scripts/rsl_rl/control.py --task Template-Stanford-Pupper-PLAY --num_envs 1 --livestream 1`
+
 ## Installation
 
 - Install Isaac Lab by following the [installation guide](https://isaac-sim.github.io/IsaacLab/main/source/setup/installation/index.html).
