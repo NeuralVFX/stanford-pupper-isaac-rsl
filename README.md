@@ -1,17 +1,7 @@
 # Standford Pupper V2 RSL
 ![examples/pupper.gif](examples/pupper.gif)
 
-## Overview
-
-This project/repository serves as a template for building projects or extensions based on Isaac Lab.
-It allows you to develop in an isolated environment, outside of the core Isaac Lab repository.
-
-**Key Features:**
-
-- `Isolation` Work outside the core Isaac Lab repository, ensuring that your development efforts remain self-contained.
-- `Flexibility` This template is set up to allow your code to be run as an extension in Omniverse.
-
-**Keywords:** extension, template, isaaclab
+This is an RSL training script setup for [Stanford Pupper](https://github.com/chandyalex/stanford_pupper_description)
 
 ## Installation
 
