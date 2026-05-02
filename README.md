@@ -1,5 +1,7 @@
 # Stanford Pupper - Isaac Lab RSL Training Script
-![examples/pupper.gif](examples/pupper.gif)
+<p align="center">
+  <img src="examples/pupper.gif" width="600" alt="Stanford Pupper Example Animation">
+</p>
 
 This is an RSL training script setup for [Stanford Pupper](https://pupper.readthedocs.io/en/latest/)
 - Uses the URDF from https://github.com/chandyalex/stanford_pupper_description
