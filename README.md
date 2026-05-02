@@ -1,4 +1,4 @@
-# Standford Pupper - Isaac Lab RSL Training Script
+# Stanford Pupper - Isaac Lab RSL Training Script
 ![examples/pupper.gif](examples/pupper.gif)
 
 This is an RSL training script setup for [Stanford Pupper](https://pupper.readthedocs.io/en/latest/)
