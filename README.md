@@ -2,7 +2,10 @@
 ![examples/pupper.gif](examples/pupper.gif)
 
 This is an RSL training script setup for [Stanford Pupper](https://github.com/chandyalex/stanford_pupper_description)
-
+- Uses the URDF from https://github.com/chandyalex/stanford_pupper_description
+- Set limits on joints
+- Ajusted mass of limbs
+- Applied balance loss
 ## Usage
 ### Training:
 `../../IsaacLab/isaaclab.sh -p scripts/rsl_rl/train.py --task Template-Stanford-Pupper-v0 --num_envs 4096 --headless --video --video_length 200 --video_interval 200`
