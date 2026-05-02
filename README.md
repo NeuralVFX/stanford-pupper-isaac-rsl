@@ -1,4 +1,5 @@
-# Template for Isaac Lab Projects
+# Standford Pupper V2 RSL
+![examples/pupper.gif](examples/pupper.gif)
 
 ## Overview
 
