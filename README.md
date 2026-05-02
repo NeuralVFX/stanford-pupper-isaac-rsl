@@ -4,7 +4,7 @@
 This is an RSL training script setup for [Stanford Pupper](https://pupper.readthedocs.io/en/latest/)
 - Uses the URDF from https://github.com/chandyalex/stanford_pupper_description
 - Set arbitrary limits on joints
-- Ajusted mass of limbs
+- Adjusted mass of limbs
 - Applied balance loss
 ## Usage
 ### Training:
