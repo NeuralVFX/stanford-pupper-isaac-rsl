@@ -1,9 +1,9 @@
 # Standford Pupper V2 RSL
 ![examples/pupper.gif](examples/pupper.gif)
 
-This is an RSL training script setup for [Stanford Pupper](https://github.com/chandyalex/stanford_pupper_description)
+This is an RSL training script setup for [Stanford Pupper](https://pupper.readthedocs.io/en/latest/)
 - Uses the URDF from https://github.com/chandyalex/stanford_pupper_description
-- Set limits on joints
+- Set arbitrary limits on joints
 - Ajusted mass of limbs
 - Applied balance loss
 ## Usage
